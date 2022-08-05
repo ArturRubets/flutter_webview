@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 
+import '../../../common_widgets/background_with_football_image.dart';
+
 class MenuGame extends StatelessWidget {
   const MenuGame({super.key});
 
@@ -18,14 +20,7 @@ class MenuGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/image/background.png'),
-            fit: BoxFit.fill,
-          ),
-        ),
+      body: BackgroundWithFootballImage(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../resources/resources.dart';
+import '../../../../resources/resources.dart';
 import '../../webview/view/web_view.dart';
 
 class ButtonToWebview extends StatelessWidget {

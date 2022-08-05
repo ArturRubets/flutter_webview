@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../resources/resources.dart';
+import '../../../../resources/resources.dart';
+import '../../../common_widgets/background_with_football_image.dart';
 import '../widgets/button_to_game.dart';
 import '../widgets/button_to_webview.dart';
 
@@ -18,14 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: AppFonts.jura),
       home: Scaffold(
-        body: Container(
-          width: double.infinity,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/image/background.png'),
-              fit: BoxFit.fill,
-            ),
-          ),
+        body: BackgroundWithFootballImage(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

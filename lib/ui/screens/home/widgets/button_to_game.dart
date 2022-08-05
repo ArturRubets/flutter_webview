@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../resources/resources.dart';
+import '../../../../resources/resources.dart';
 import '../../menu_game/view/menu_game.dart';
 
 class ButtonToGame extends StatelessWidget {
