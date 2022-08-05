@@ -26,10 +26,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -58,5 +55,15 @@ class DefaultFirebaseOptions {
     messagingSenderId: '41967702226',
     projectId: 'fir-flutter-codelab-e45db',
     storageBucket: 'fir-flutter-codelab-e45db.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAJiEcSXzEI-R5g64Bsj1571Ei2hU6kLic',
+    appId: '1:41967702226:ios:3637e35335a972ce84dd0b',
+    messagingSenderId: '41967702226',
+    projectId: 'fir-flutter-codelab-e45db',
+    storageBucket: 'fir-flutter-codelab-e45db.appspot.com',
+    iosClientId: '41967702226-qo81rrgg26ou20raq78qhhd46pnb9kvk.apps.googleusercontent.com',
+    iosBundleId: 'com.example.flutterWebview',
   );
 }
