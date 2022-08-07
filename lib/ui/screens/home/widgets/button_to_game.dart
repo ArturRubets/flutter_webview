@@ -12,15 +12,15 @@ class ButtonToGame extends StatelessWidget {
       onTap: () => MenuGame.route(context),
       child: Container(
         padding: const EdgeInsets.all(1),
-        decoration: AppStyle.redButtonDecorationOuter,
+        decoration: HomeScreenStyle.redButtonDecorationOuter,
         child: Container(
           width: 310,
           height: 100,
           alignment: Alignment.center,
-          decoration: AppStyle.redButtonDecorationInner,
+          decoration: HomeScreenStyle.redButtonDecorationInner,
           child: const Text(
             'GAME',
-            style: AppStyle.button,
+            style: HomeScreenStyle.button,
           ),
         ),
       ),

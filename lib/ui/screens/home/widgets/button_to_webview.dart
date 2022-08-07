@@ -17,15 +17,15 @@ class ButtonToWebview extends StatelessWidget {
       onTap: () => WebViewWidget.route(context, url),
       child: Container(
         padding: const EdgeInsets.all(1),
-        decoration: AppStyle.greenButtonDecorationOuter,
+        decoration: HomeScreenStyle.greenButtonDecorationOuter,
         child: Container(
           width: 310,
           height: 100,
           alignment: Alignment.center,
-          decoration: AppStyle.greenButtonDecorationInner,
+          decoration: HomeScreenStyle.greenButtonDecorationInner,
           child: const Text(
             'SITE',
-            style: AppStyle.button,
+            style: HomeScreenStyle.button,
           ),
         ),
       ),
