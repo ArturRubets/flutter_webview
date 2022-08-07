@@ -4,7 +4,7 @@ import 'resources.dart';
 
 abstract class HomeScreenStyle {
   static const button = TextStyle(
-    color: Colors.white,
+    color: AppColors.white,
     height: 68 / 58,
     fontSize: 58,
     fontWeight: FontWeight.w400,
@@ -103,12 +103,12 @@ abstract class MenuGameScreenStyle {
     ),
   );
 
-  static const textMainMenuTitle = TextStyle(
+  static const textTitle = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 64,
     height: 75 / 64,
     letterSpacing: 64 * 0.02,
-    color: Colors.white,
+    color: AppColors.white,
     shadows: [
       BoxShadow(
         color: AppColors.blackOpacity45,
@@ -118,7 +118,7 @@ abstract class MenuGameScreenStyle {
     ],
   );
 
-  static const textMainMenuButtons = TextStyle(
+  static const textButtons = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 40,
     height: 37 / 40,
@@ -186,5 +186,32 @@ abstract class MenuGameScreenStyle {
         AppColors.green8,
       ],
     ),
+  );
+}
+
+abstract class GameScreenStyle {
+  static const title = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize: 36,
+    height: 42 / 36,
+    letterSpacing: 36 * 0.02,
+    color: AppColors.white,
+  );
+  static const appBar = BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        AppColors.green3,
+        AppColors.green10,
+      ],
+    ),
+    boxShadow: [
+      BoxShadow(
+        offset: Offset(0, 7),
+        blurRadius: 7,
+        color: AppColors.blackOpacity25,
+      ),
+    ],
   );
 }

@@ -9,8 +9,9 @@ import '../widgets/name_game.dart';
 class MenuGame extends StatelessWidget {
   const MenuGame({super.key});
 
+  static const String routeName = 'menuGame';
   static void route(BuildContext context) =>
-      Navigator.of(context).pushNamed('menuGame');
+      Navigator.of(context).pushNamed(routeName);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,7 @@ class MenuGame extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () => Navigator.pop(context),
                       child: Image.asset(
-                        'assets/image/x.png',
+                        AppImages.close,
                         width: 13,
                         height: 13,
                       ),

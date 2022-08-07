@@ -10,6 +10,7 @@ class Home extends StatelessWidget {
     required this.url,
   });
 
+  static const String routeName = '/';
   final String url;
 
   @override

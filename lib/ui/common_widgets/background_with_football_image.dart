@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../resources/app_images.dart';
+
 class BackgroundWithFootballImage extends StatelessWidget {
   const BackgroundWithFootballImage({
     super.key,
@@ -15,7 +17,7 @@ class BackgroundWithFootballImage extends StatelessWidget {
       height: double.infinity,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/image/background.png'),
+          image: AssetImage(AppImages.background),
           fit: BoxFit.fill,
         ),
       ),

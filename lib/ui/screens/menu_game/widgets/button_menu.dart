@@ -53,7 +53,7 @@ class _ButtonMenuState extends State<ButtonMenu> {
           decoration: decorationInner,
           child: Text(
             widget.name,
-            style: MenuGameScreenStyle.textMainMenuButtons,
+            style: MenuGameScreenStyle.textButtons,
             textAlign: TextAlign.center,
           ),
         ),

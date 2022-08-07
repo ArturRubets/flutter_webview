@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../../resources/resources.dart';
 import '../../../common_widgets/app_bar_game.dart';
 
-class Game extends StatelessWidget {
-  const Game({super.key});
+class History extends StatelessWidget {
+  const History({super.key});
 
-  static const routeName = 'game';
+  static const routeName = 'history';
   static void route(BuildContext context) {
     Navigator.of(context).pushNamedAndRemoveUntil(
       routeName,
@@ -16,21 +16,11 @@ class Game extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(
-      //     'GAME',
-      //     style: GameScreenStyle.title,
-      //   ),
-      //   centerTitle: true,
-      // ),
+    return const Scaffold(
+      // appBar: AppBarGame(title: 'history'),
       body: ColoredBox(
         color: AppColors.green9,
-        child: Column(
-          children: [
-            AppBarGame(title: 'GAME'),
-          ],
-        ),
+        child: SizedBox.expand(),
       ),
     );
   }

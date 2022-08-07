@@ -21,7 +21,7 @@ class NameGame extends StatelessWidget {
       child: const Text(
         'GAME',
         textAlign: TextAlign.center,
-        style: MenuGameScreenStyle.textMainMenuTitle,
+        style: MenuGameScreenStyle.textTitle,
       ),
     );
   }
