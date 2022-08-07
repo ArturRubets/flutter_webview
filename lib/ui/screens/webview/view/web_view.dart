@@ -1,7 +1,4 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebViewWidget extends StatelessWidget {
@@ -9,14 +6,8 @@ class WebViewWidget extends StatelessWidget {
 
   final String url;
 
-  static void route(BuildContext context, String url) {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => WebViewWidget(url: url),
-      ),
-    );
-    unawaited(OneSignal.shared.sendTag('tag', 'about'));
-  }
+  static void route(BuildContext context, String url) =>
+      Navigator.of(context).pushNamed('webView', arguments: url);
 
   @override
   Widget build(BuildContext context) {

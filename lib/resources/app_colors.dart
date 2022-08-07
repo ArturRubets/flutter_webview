@@ -5,6 +5,8 @@ abstract class AppColors {
   static const blackOpacity55 = Color.fromRGBO(0, 0, 0, 0.55);
   static const blackOpacity45 = Color.fromRGBO(0, 0, 0, 0.45);
   static const blue = Color(0xFF00FFC2);
+  static const blueOpacity55 = Color.fromRGBO(0, 255, 194, 0.55);
+  static const green9 = Color(0xFF0B3830);
   static const green8 = Color(0xFF252E12);
   static const green7 = Color(0xDD252E12);
   static const green6 = Color(0xFF258A66);

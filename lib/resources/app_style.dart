@@ -159,7 +159,7 @@ abstract class MenuGameScreenStyle {
       BoxShadow(
         offset: Offset(0, 9.25),
         blurRadius: 6.17,
-        color: AppColors.blue,
+        color: AppColors.blueOpacity55,
       ),
     ],
   );

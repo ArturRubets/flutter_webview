@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'setup.dart';
-import 'ui/screens/home/view/my_app.dart';
+import 'ui/screens/my_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
