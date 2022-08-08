@@ -17,12 +17,10 @@ class Game extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ColoredBox(
-        color: AppColors.green9,
-        child: Center(
-          child: Text('Game ${Random().nextInt(100)}'),
-        ),
+    return ColoredBox(
+      color: AppColors.green9,
+      child: Center(
+        child: Text('Game ${Random().nextInt(100)}'),
       ),
     );
   }

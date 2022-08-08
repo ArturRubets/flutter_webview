@@ -235,7 +235,7 @@ abstract class GameScreenStyle {
 }
 
 abstract class HistoryScreenStyle {
-  static const historyItemOuter = const BoxDecoration(
+  static const historyItemOuter = BoxDecoration(
     borderRadius: BorderRadius.all(Radius.circular(15)),
     gradient: LinearGradient(
       begin: Alignment.topCenter,
@@ -247,7 +247,7 @@ abstract class HistoryScreenStyle {
     ),
   );
 
-  static const historyItemInner = const BoxDecoration(
+  static const historyItemInner = BoxDecoration(
     borderRadius: BorderRadius.all(Radius.circular(15)),
     gradient: LinearGradient(
       begin: Alignment.topCenter,

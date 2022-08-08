@@ -33,7 +33,7 @@ class _GameSetupState extends State<GameSetup> {
     const Settings(),
   ];
 
-  Widget _currentScreen = Game();
+  Widget _currentScreen = const Game();
 
   void _setScreen(int indexScreen) {
     setState(() {
@@ -44,8 +44,9 @@ class _GameSetupState extends State<GameSetup> {
   @override
   Widget build(BuildContext context) {
     final String title;
-    switch (3) {
+    switch (widget.currentIndex) {
       case 0:
+        // ignore: prefer_const_constructors
         _currentScreen = Game();
         _screens.first = _currentScreen;
         title = _screensName.first;
