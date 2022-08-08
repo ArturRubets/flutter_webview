@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:appsflyer_sdk/appsflyer_sdk.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
@@ -33,4 +34,16 @@ Future<void> _initFirebase() async {
 Future<void> _initOneSignal() async {
   const oneSignalAppId = '81638a6c-f825-4d31-b208-94e6c3bfca21';
   await OneSignal.shared.setAppId(oneSignalAppId);
+}
+
+AppsflyerSdk initAppsFlyer() {
+  final appsFlyerOptions = AppsFlyerOptions(
+    afDevKey: 'zUz9kS6N2L8sHpQCDqyRyZ',
+    showDebug: true,
+    timeToWaitForATTUserAuthorization: 50,
+    disableAdvertisingIdentifier: false,
+    disableCollectASA: false,
+  );
+
+  return AppsflyerSdk(appsFlyerOptions);
 }
