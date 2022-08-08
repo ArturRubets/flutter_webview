@@ -26,7 +26,7 @@ class _ButtonMenuState extends State<ButtonMenu> {
 
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTapDown: (details) {
+      onTapDown: (_) {
         setState(() {
           isClicked = true;
         });

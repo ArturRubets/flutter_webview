@@ -197,6 +197,24 @@ abstract class GameScreenStyle {
     letterSpacing: 36 * 0.02,
     color: AppColors.white,
   );
+  static const menuButton = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize: 36,
+    height: 42 / 36,
+    letterSpacing: 36 * 0.02,
+    color: AppColors.white,
+    shadows: [
+      Shadow(
+        offset: Offset(0, 5),
+        blurRadius: 5,
+        color: AppColors.blackOpacity45,
+      )
+    ],
+  );
+
+  static final menuButtonClicked =
+      menuButton.copyWith(color: AppColors.green11);
+      
   static const appBar = BoxDecoration(
     gradient: LinearGradient(
       begin: Alignment.topCenter,

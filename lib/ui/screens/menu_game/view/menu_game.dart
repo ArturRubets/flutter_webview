@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../resources/resources.dart';
 import '../../../common_widgets/background_with_football_image.dart';
-import '../../game/view/game.dart';
+import '../../game_setup/view/game_setup.dart';
 import '../widgets/button_menu.dart';
 import '../widgets/name_game.dart';
 
@@ -50,22 +50,22 @@ class MenuGame extends StatelessWidget {
                         const SizedBox(height: 56),
                         ButtonMenu(
                           name: 'new game',
-                          onTap: () => Game.route(context),
+                          onTap: () => GameSetup.route(context, 1),
                         ),
                         const SizedBox(height: 26),
                         ButtonMenu(
                           name: 'continue',
-                          onTap: () {},
+                          onTap: () => GameSetup.route(context, 1),
                         ),
                         const SizedBox(height: 26),
                         ButtonMenu(
                           name: 'history',
-                          onTap: () {},
+                          onTap: () => GameSetup.route(context, 2),
                         ),
                         const SizedBox(height: 26),
                         ButtonMenu(
                           name: 'settings',
-                          onTap: () {},
+                          onTap: () => GameSetup.route(context, 3),
                         ),
                       ],
                     ),

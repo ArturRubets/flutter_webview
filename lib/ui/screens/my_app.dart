@@ -5,6 +5,7 @@ import 'package:onesignal_flutter/onesignal_flutter.dart';
 
 import '../../resources/resources.dart';
 import 'game/view/game.dart';
+import 'game_setup/view/game_setup.dart';
 import 'history/view/history.dart';
 import 'home/view/home.dart';
 import 'menu_game/view/menu_game.dart';
@@ -43,11 +44,19 @@ class MyApp extends StatelessWidget {
         );
       case Settings.routeName:
         return MaterialPageRoute<void>(
-          builder: (_) => const Settings(), 
+          builder: (_) => const Settings(),
         );
       case History.routeName:
         return MaterialPageRoute<void>(
           builder: (_) => const History(),
+        );
+      case GameSetup.routeName:
+       final currentIndexPage = settings.arguments;
+        if (currentIndexPage == null) {
+          break;
+        }
+        return MaterialPageRoute<void>(
+          builder: (_) => GameSetup(currentIndex: currentIndexPage as int),
         );
     }
 
