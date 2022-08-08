@@ -214,7 +214,7 @@ abstract class GameScreenStyle {
 
   static final menuButtonClicked =
       menuButton.copyWith(color: AppColors.green11);
-      
+
   static const appBar = BoxDecoration(
     gradient: LinearGradient(
       begin: Alignment.topCenter,
@@ -231,5 +231,31 @@ abstract class GameScreenStyle {
         color: AppColors.blackOpacity25,
       ),
     ],
+  );
+}
+
+abstract class HistoryScreenStyle {
+  static const historyItemOuter = const BoxDecoration(
+    borderRadius: BorderRadius.all(Radius.circular(15)),
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        Color(0xFFFFFFFF),
+        Color(0xFF00FFC2),
+      ],
+    ),
+  );
+
+  static const historyItemInner = const BoxDecoration(
+    borderRadius: BorderRadius.all(Radius.circular(15)),
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        Color(0xFF4CAF41),
+        Color(0xFF09513F),
+      ],
+    ),
   );
 }

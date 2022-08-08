@@ -5,7 +5,6 @@ import '../../../common_widgets/app_bar_game.dart';
 import '../../game/view/game.dart';
 import '../../history/view/history.dart';
 import '../../settings/view/settings.dart';
-import '../model/button_info.dart';
 
 // ignore: must_be_immutable
 class GameSetup extends StatefulWidget {
@@ -45,7 +44,7 @@ class _GameSetupState extends State<GameSetup> {
   @override
   Widget build(BuildContext context) {
     final String title;
-    switch (widget.currentIndex) {
+    switch (3) {
       case 0:
         _currentScreen = Game();
         _screens.first = _currentScreen;
